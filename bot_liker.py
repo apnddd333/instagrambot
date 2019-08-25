@@ -72,10 +72,7 @@ class InstagramBot:
                 time.sleep(2)
                 like_button = lambda: driver.find_element_by_xpath('//span[@aria-label="Like"]').click()
                 like_button().click()
-                time.sleep(1)
-                #follow_button = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/header/div[2]/div[1]/div[2]/button').click()
-                #follow_button().click()
-                time.sleep(1)
+                time.sleep(2)
 
                 for second in reversed(range(0, random.randint(18, 28))):
                     print_same_line("#" + hashtag + ': unique photos left: ' + str(unique_photos)
@@ -89,8 +86,8 @@ class InstagramBot:
 
 if __name__ == "__main__":
 
-    username = "kobakhidze__"
-    password = "tvinimotyani123"
+    username = "YOUR_USERNAME"
+    password = "YOUR_PASSWORD"
 
     ig = InstagramBot(username, password)
     ig.login()
