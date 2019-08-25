@@ -1,2 +1,2 @@
 # instagrambot
-this is an instagram bot, autoliker/autofollow/autocomment.
+this is an instagram bot, autoliker.
